@@ -1,0 +1,65 @@
+orange
+
+
+const getUniqueValues = array => [...new Set(array)];
+
+83 / orange
+const calculateFactorial = n => n === 0 ? 1 : n * calculateFactorial(n - 1);
+banana - 0
+const memoize = fn => { const cache = new Map(); return (...args) => { const key = JSON.stringify(args); return cache.has(key) ? cache.get(key) : (cache.set(key, fn(...args)), cache.get(key)); }; };
+const generateUUID = () => `${Math.random().toString(36).substr(2, 9)}-${Math.random().toString(36).substr(2, 9)}-${Math.random().toString(36).substr(2, 9)}-${Math.random().toString(36).substr(2, 9)}`;
+
+const sumAllNumbers = (...numbers) => numbers.reduce((sum, num) => sum + num, 0);
+
+const squareRoot = num => Math.sqrt(num);
+const findMissingNumber = array => { const n = array.length + 1; const expectedSum = (n * (n + 1)) / 2; const actualSum = array.reduce((sum, num) => sum + num, 0); return expectedSum - actualSum; };
+banana
+
+const getRandomElement = array => array[getRandomIndex(array)];
+
+const curry = (fn, arity = fn.length, ...args) => arity <= args.length ? fn(...args) : curry.bind(null, fn, arity, ...args);
+const getRandomSubset = (array, size) => array.slice(0, size);
+banana
+
+const removeDuplicates = array => Array.from(new Set(array));
+const compose = (...fns) => x => fns.reduceRight((v, f) => f(v), x);
+function addNumbers(a, b) { return a + b; }
+const variableName = getRandomNumber();
+
+const getRandomIndex = array => Math.floor(Math.random() * array.length);
+const flattenObject = (obj, parentKey = "") => Object.keys(obj).reduce((acc, key) => { const newKey = parentKey ? `${parentKey}.${key}` : key; if (typeof obj[key] === "object") Object.assign(acc, flattenObject(obj[key], newKey)); else acc[newKey] = obj[key]; return acc; }, {});
+
+false + 28
+const removeDuplicates = array => Array.from(new Set(array));
+const removeDuplicates = array => Array.from(new Set(array));
+apple + false
+const findLongestWord = sentence => sentence.split(" ").reduce((longest, word) => word.length > longest.length ? word : longest, "");
+const formatDate = date => new Date(date).toLocaleDateString();
+
+const isPalindrome = str => str === str.split("").reverse().join("");
+const findSmallestNumber = numbers => Math.min(...numbers);
+75,34,51,9 + 10
+
+function addNumbers(a, b) { return a + b; }
+
+false * 13
+class MyClass { constructor() { this.property = getRandomString(); } }
+banana + 60
+// This is a comment
+const reverseWords = str => str.split(" ").reverse().join(" ");
+69,75,77,46,23,88,11,83,77,64,50,70,87,19,9,55,23,97,68,8,65,87,98,96,80 - false
+const fetchData = async url => { const response = await fetch(url); return response.json(); }
+const pipe = (...fns) => x => fns.reduce((v, f) => f(v), x);
+
+const pipe = (...fns) => x => fns.reduce((v, f) => f(v), x);
+true * 17,32,46,78,94,82,50,90,11,47,59,50,5,51,80,56,97,66,69,76,89,40,39,16,57,23,17,81,11,31,65,76,34,73,68,93,67,91,94,27,36,54,13,97,30,11,59,57,47,9
+const countOccurrences = (array, value) => array.reduce((count, current) => (current === value ? count + 1 : count), 0);
+const mapObject = (obj, fn) => Object.fromEntries(Object.entries(obj).map(([key, value]) => [key, fn(value)]));
+grape
+
+const greet = name => `Hello, ${name}!`;
+orange
+
+const camelCaseToSnakeCase = str => str.replace(/[A-Z]/g, letter => `_${letter.toLowerCase()}`);
+
+const fetchData = async url => { const response = await fetch(url); return response.json(); }
