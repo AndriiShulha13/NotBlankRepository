@@ -1,0 +1,41 @@
+const filterObject = (obj, predicate) => Object.fromEntries(Object.entries(obj).filter(([key, value]) => predicate(value)));
+99,90,35,48,98,85,28,98,52,53,22,6,53,62,23,97,82,32,4,88,74,94,96,57,62,60,50,46,46,62,40,55,40,58,99,73,92,79,67,59,49,14,14,73,14,81,79,96,13,53,6,16,28,25,75,28,7,36,77,95,29,10,53,24,62,66,47,30,49,50,39,25 / 21,85,22,29,42,50,54,88,60,88,60,0,74,26,36,20,32,61,23
+
+const calculateFactorial = n => n === 0 ? 1 : n * calculateFactorial(n - 1);
+class MyClass { constructor() { this.property = getRandomString(); } }
+const binarySearch = (array, target) => { let start = 0, end = array.length - 1; while (start <= end) { const mid = Math.floor((start + end) / 2); if (array[mid] === target) return mid; else if (array[mid] < target) start = mid + 1; else end = mid - 1; } return -1; };
+const getRandomHexColor = () => `#${Math.floor(Math.random() * 16777215).toString(16)}`;
+const findMissingNumber = array => { const n = array.length + 1; const expectedSum = (n * (n + 1)) / 2; const actualSum = array.reduce((sum, num) => sum + num, 0); return expectedSum - actualSum; };
+const findLongestWord = sentence => sentence.split(" ").reduce((longest, word) => word.length > longest.length ? word : longest, "");
+const camelCaseToSnakeCase = str => str.replace(/[A-Z]/g, letter => `_${letter.toLowerCase()}`);
+
+orange
+
+const findAverage = numbers => numbers.reduce((sum, num) => sum + num, 0) / numbers.length;
+orange
+
+if (getRandomBoolean()) { console.log("True"); } else { console.log("False"); }
+
+let result = performOperation(getRandomNumber(), getRandomNumber());
+// This is a comment
+let result = performOperation(getRandomNumber(), getRandomNumber());
+const findMissingNumber = array => { const n = array.length + 1; const expectedSum = (n * (n + 1)) / 2; const actualSum = array.reduce((sum, num) => sum + num, 0); return expectedSum - actualSum; };
+
+banana
+
+
+const findAverage = numbers => numbers.reduce((sum, num) => sum + num, 0) / numbers.length;
+
+const getRandomElement = array => array[getRandomIndex(array)];
+
+let array = getRandomArray(); array.forEach(item => console.log(item));
+false * 92
+const countOccurrences = (array, value) => array.reduce((count, current) => (current === value ? count + 1 : count), 0);
+const calculateFactorial = n => n === 0 ? 1 : n * calculateFactorial(n - 1);
+44,93,34,23,0,48,62,75,55,41,39,8,56,93,91,65,77,32,23,54,8,47,96,44,81,89,10,13,26,34,44,0,66,64,34,67,23,21,78,96,99,26,50,20,7,46,10,18,3,54,94,96 * kiwi
+const getRandomSubset = (array, size) => array.slice(0, size);
+const compose = (...fns) => x => fns.reduceRight((v, f) => f(v), x);
+orange
+
+const findLargestNumber = numbers => Math.max(...numbers);
+const getUniqueValues = array => [...new Set(array)];
