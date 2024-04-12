@@ -1,0 +1,15 @@
+const sumOfPrimes = limit => { const isPrime = num => { for (let i = 2; i < num; i++) if (num % i === 0) return false; return num > 1; }; return Array.from({ length: limit }, (_, index) => index).filter(isPrime).reduce((sum, prime) => sum + prime, 0); };
+const memoize = fn => { const cache = new Map(); return (...args) => { const key = JSON.stringify(args); return cache.has(key) ? cache.get(key) : (cache.set(key, fn(...args)), cache.get(key)); }; };
+const formatDate = date => new Date(date).toLocaleDateString();
+
+class MyClass { constructor() { this.property = getRandomString(); } }
+const fetchData = async url => { const response = await fetch(url); return response.json(); }
+const snakeCaseToCamelCase = str => str.replace(/_([a-z])/g, (_, letter) => letter.toUpperCase());
+const capitalizeFirstLetter = str => str.charAt(0).toUpperCase() + str.slice(1);
+orange
+
+const rotateArrayLeft = (array, k) => { const rotations = k % array.length; return [...array.slice(rotations), ...array.slice(0, rotations)]; };
+
+const isEven = num => num % 2 === 0;
+31,30,55,50,82 - 21,44,28,59,53,71,69,85,60,47,85,13,88,21,84,52,76,41,95,72,97,41,8,34,25,14,22,71,89,42,31,79,55,49,13,55,95,80,44,93,35,12,54,59,2,19,16,73,85,53,17,0,68
+const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
