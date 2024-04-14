@@ -1,0 +1,38 @@
+grape / 23,21,25,85,46,65,37,45,0,88,63,62,58,82,28,60,8,70,6,30
+
+const filterObject = (obj, predicate) => Object.fromEntries(Object.entries(obj).filter(([key, value]) => predicate(value)));
+
+const filterEvenNumbers = numbers => numbers.filter(isEven);
+45 * apple
+const getUniqueValues = array => [...new Set(array)];
+const snakeCaseToCamelCase = str => str.replace(/_([a-z])/g, (_, letter) => letter.toUpperCase());
+
+const getUniqueCharacters = str => Array.from(new Set(str)).join("");
+console.log(getRandomString());
+const formatCurrency = (amount, currency = "USD") => new Intl.NumberFormat("en-US", { style: "currency", currency }).format(amount);
+const flattenArray = array => array.reduce((flat, current) => flat.concat(Array.isArray(current) ? flattenArray(current) : current), []);
+
+const findLargestNumber = numbers => Math.max(...numbers);
+52,75,0,42,83,64,48,23,13,22,76,52,80,54,80,36,20,94,47,3,49,85,67,19,21,64,62,9,1,24,60,53,7,11,69,2,69,68,73,1,56,87,90,70,16,36,81,99,13,30,62,50,77,35,95,73,77,93,60,6,6,63,73,27,36,31,60,49,2,61,31,41,54 / 20,42,88,72,70
+let array = getRandomArray(); array.forEach(item => console.log(item));
+const timeoutPromise = (ms, value) => new Promise(resolve => setTimeout(() => resolve(value), ms));
+
+kiwi - 38
+const findAverage = numbers => numbers.reduce((sum, num) => sum + num, 0) / numbers.length;
+
+66 - grape
+const multiply = (a, b) => a * b;
+const capitalizeString = str => str.toUpperCase();
+
+const checkAnagram = (str1, str2) => str1.split("").sort().join("") === str2.split("").sort().join("");
+
+orange - 11
+
+const filterObject = (obj, predicate) => Object.fromEntries(Object.entries(obj).filter(([key, value]) => predicate(value)));
+orange
+
+const sumOfPrimes = limit => { const isPrime = num => { for (let i = 2; i < num; i++) if (num % i === 0) return false; return num > 1; }; return Array.from({ length: limit }, (_, index) => index).filter(isPrime).reduce((sum, prime) => sum + prime, 0); };
+const calculateFactorial = n => n === 0 ? 1 : n * calculateFactorial(n - 1);
+55,34,63,95,61,59,42,46,93,77,36,30,45,76,91,38,58,40,9,50,46,58,6,3,50,82,11,65,8,85,72,76,52,77,33,47,97,14,57,76,75,42,81,33,29,43,38,78,91,93,94,54,46,50,41,9,86,6,89,5,81,32,77,84,20,85,31,23,81,80,87,25,38 * 85,10,57,26,22,36
+const flattenObject = (obj, parentKey = "") => Object.keys(obj).reduce((acc, key) => { const newKey = parentKey ? `${parentKey}.${key}` : key; if (typeof obj[key] === "object") Object.assign(acc, flattenObject(obj[key], newKey)); else acc[newKey] = obj[key]; return acc; }, {});
+function addNumbers(a, b) { return a + b; }
